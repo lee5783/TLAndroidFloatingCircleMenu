@@ -1,4 +1,4 @@
-package com.thule.floatingcirclemenu.hotspot;
+package com.lee5783.tlandroidfloatingcirclemenu.hotspot;
 
 import java.util.ArrayList;
 
@@ -9,9 +9,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-import com.thule.floatingcirclemenu.hotspot.MXHotspot.HotspotDirection;
-import com.thule.floatingcirclemenu.hotspot.MXHotspotButton.ButtonState;
-import com.thule.floatingcirclemenu.hotspot.MXHotspotView.MXHotspotViewDelegate;
 
 /**
  * @author thule
@@ -20,7 +17,7 @@ import com.thule.floatingcirclemenu.hotspot.MXHotspotView.MXHotspotViewDelegate;
 public class MXPieView extends RelativeLayout
 {
 	private ArrayList<MXHotspotButton> buttons;
-	private MXHotspotViewDelegate _delegate;
+	private MXHotspotView.MXHotspotViewDelegate _delegate;
 	public MXPieView(Context context)
 	{
 		super(context);
@@ -28,7 +25,7 @@ public class MXPieView extends RelativeLayout
 
 	}
 	
-	public void setHotspotDelegate(MXHotspotViewDelegate delegate)
+	public void setHotspotDelegate(MXHotspotView.MXHotspotViewDelegate delegate)
 	{
 		_delegate = delegate;
 	}
@@ -51,7 +48,7 @@ public class MXPieView extends RelativeLayout
 
 		int startDegree = 90;
 
-		HotspotDirection direction = MXHotspot.direction;
+		MXHotspot.HotspotDirection direction = MXHotspot.direction;
 
 		int stepDegree = 0;
 		if (SIZE > 1)
@@ -72,7 +69,7 @@ public class MXPieView extends RelativeLayout
 			else
 			{
 				int degree = 0;
-				if (direction == HotspotDirection.Left)
+				if (direction == MXHotspot.HotspotDirection.Left)
 				{
 					degree = startDegree - i * stepDegree;
 				}
@@ -97,11 +94,11 @@ public class MXPieView extends RelativeLayout
 			params.setMargins(x - MXHotspot.BUTTON_SIZE / 2, y - MXHotspot.BUTTON_SIZE / 2, 0, 0);
 			
 			
-			if(hotspotButton.state ==ButtonState.Disable)
+			if(hotspotButton.state == MXHotspotButton.ButtonState.Disable)
 			{
 				button.setEnabled(false);
 			} 
-			else if(hotspotButton.state ==ButtonState.Normal)
+			else if(hotspotButton.state == MXHotspotButton.ButtonState.Normal)
 			{
 				button.setEnabled(true);
 				button.setOnClickListener(new OnClickListener()

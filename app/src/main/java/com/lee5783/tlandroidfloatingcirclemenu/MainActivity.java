@@ -1,4 +1,4 @@
-package com.thule.floatingcirclemenu;
+package com.lee5783.tlandroidfloatingcirclemenu;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,7 +9,8 @@ import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.thule.floatingcirclemenu.service.MXService;
+import com.lee5783.tlandroidfloatingcirclemenu.R;
+import com.lee5783.tlandroidfloatingcirclemenu.service.MXService;
 
 /**
  * @author thule
@@ -38,10 +39,6 @@ public class MainActivity extends Activity
 				ScaleAnimation scalseAnimation = new ScaleAnimation(0.0f, 3.0f, 0.0f, 3.0f, 50, 50);
 				scalseAnimation.setDuration(1000);				
 				image.startAnimation(scalseAnimation);
-				
-//				TranslateAnimation translateAnimation = new TranslateAnimation(0, 200, 0, 0);
-//				translateAnimation.setDuration(1000);
-//				image.startAnimation(translateAnimation);
 			}
 		});
 	}

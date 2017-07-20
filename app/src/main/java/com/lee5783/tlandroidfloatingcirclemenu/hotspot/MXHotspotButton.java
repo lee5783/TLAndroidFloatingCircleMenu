@@ -1,9 +1,10 @@
 /**
  * 
  */
-package com.thule.floatingcirclemenu.hotspot;
+package com.lee5783.tlandroidfloatingcirclemenu.hotspot;
 
-import com.thule.floatingcirclemenu.R;
+
+import com.lee5783.tlandroidfloatingcirclemenu.R;
 
 /**
  * @author thule

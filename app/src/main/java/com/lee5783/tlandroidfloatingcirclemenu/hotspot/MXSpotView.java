@@ -1,9 +1,9 @@
-package com.thule.floatingcirclemenu.hotspot;
+package com.lee5783.tlandroidfloatingcirclemenu.hotspot;
 
 import android.content.Context;
 import android.widget.RelativeLayout;
+import com.lee5783.tlandroidfloatingcirclemenu.R;
 
-import com.thule.floatingcirclemenu.R;
 
 /**
  * @author thule

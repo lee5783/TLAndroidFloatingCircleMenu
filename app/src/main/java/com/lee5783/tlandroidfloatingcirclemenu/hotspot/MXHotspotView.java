@@ -1,4 +1,4 @@
-package com.thule.floatingcirclemenu.hotspot;
+package com.lee5783.tlandroidfloatingcirclemenu.hotspot;
 
 import java.util.ArrayList;
 
@@ -13,9 +13,6 @@ import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.ScaleAnimation;
 import android.widget.RelativeLayout;
-
-import com.thule.floatingcirclemenu.hotspot.MXHotspot.HotspotDirection;
-import com.thule.floatingcirclemenu.hotspot.MXHotspot.HotspotPieState;
 
 /**
  * @author thule
@@ -45,10 +42,10 @@ public class MXHotspotView extends RelativeLayout
 		hotspotAnchorPoint = new Point(0, 0);
 	}
 
-	public void adjustHotspot(HotspotPieState newState, final boolean animation)
+	public void adjustHotspot(MXHotspot.HotspotPieState newState, final boolean animation)
 	{
 		// change spot params
-		if (MXHotspot.state == HotspotPieState.Close && newState != HotspotPieState.Close)
+		if (MXHotspot.state == MXHotspot.HotspotPieState.Close && newState != MXHotspot.HotspotPieState.Close)
 		{
 			RelativeLayout.LayoutParams spotViewParams = (LayoutParams) spotView.getLayoutParams();
 			spotViewParams.setMargins((int) (hotspotAnchorPoint.x - MXHotspot.SPOT_SIZE / 2),
@@ -57,9 +54,9 @@ public class MXHotspotView extends RelativeLayout
 			addView(spotView, spotViewParams);
 		}
 
-		if (newState == HotspotPieState.Close)
+		if (newState == MXHotspot.HotspotPieState.Close)
 		{
-			if (MXHotspot.state == HotspotPieState.OpenSmallPie)
+			if (MXHotspot.state == MXHotspot.HotspotPieState.OpenSmallPie)
 			{
 				closeSmallPie(animation, new HotspotOpenCloseCallback()
 				{
@@ -71,7 +68,7 @@ public class MXHotspotView extends RelativeLayout
 						if (_delegate != null)
 							_delegate.adjustWindowSize(false);
 						
-						MXHotspot.state = HotspotPieState.Close;
+						MXHotspot.state = MXHotspot.HotspotPieState.Close;
 						RelativeLayout.LayoutParams spotViewParams = (LayoutParams) spotView.getLayoutParams();
 						spotViewParams.setMargins(0, 0, 0, 0);
 						removeAllViews();
@@ -79,7 +76,7 @@ public class MXHotspotView extends RelativeLayout
 					}
 				});
 			}
-			else if (MXHotspot.state == HotspotPieState.OpenLargePie)
+			else if (MXHotspot.state == MXHotspot.HotspotPieState.OpenLargePie)
 			{
 				closeLargePie(animation, new HotspotOpenCloseCallback()
 				{
@@ -87,7 +84,7 @@ public class MXHotspotView extends RelativeLayout
 					@Override
 					public void actionCallback()
 					{
-						MXHotspot.state = HotspotPieState.Close;
+						MXHotspot.state = MXHotspot.HotspotPieState.Close;
 					}
 				});
 				closeSmallPie(animation, new HotspotOpenCloseCallback()
@@ -96,7 +93,7 @@ public class MXHotspotView extends RelativeLayout
 					@Override
 					public void actionCallback()
 					{
-						MXHotspot.state = HotspotPieState.Close;
+						MXHotspot.state = MXHotspot.HotspotPieState.Close;
 						RelativeLayout.LayoutParams spotViewParams = (LayoutParams) spotView.getLayoutParams();
 						spotViewParams.setMargins(0, 0, 0, 0);
 						removeAllViews();
@@ -105,7 +102,7 @@ public class MXHotspotView extends RelativeLayout
 							_delegate.adjustWindowSize(false);
 					}
 				});
-			} else if(MXHotspot.state == HotspotPieState.Close)
+			} else if(MXHotspot.state == MXHotspot.HotspotPieState.Close)
 			{
 				RelativeLayout.LayoutParams spotViewParams = (LayoutParams) spotView.getLayoutParams();
 				spotViewParams.setMargins(0, 0, 0, 0);
@@ -113,20 +110,20 @@ public class MXHotspotView extends RelativeLayout
 				addView(spotView, spotViewParams);
 			}
 		}
-		else if (newState == HotspotPieState.OpenSmallPie)
+		else if (newState == MXHotspot.HotspotPieState.OpenSmallPie)
 		{
-			if (MXHotspot.state == HotspotPieState.Close)
+			if (MXHotspot.state == MXHotspot.HotspotPieState.Close)
 			{
 				openSmallPie(animation, null);
 			}
-			else if (MXHotspot.state == HotspotPieState.OpenLargePie)
+			else if (MXHotspot.state == MXHotspot.HotspotPieState.OpenLargePie)
 			{
 				closeLargePie(false, null);
 			}
 		}
-		else if (newState == HotspotPieState.OpenLargePie)
+		else if (newState == MXHotspot.HotspotPieState.OpenLargePie)
 		{
-			if (MXHotspot.state == HotspotPieState.OpenSmallPie)
+			if (MXHotspot.state == MXHotspot.HotspotPieState.OpenSmallPie)
 			{
 				openLargePie(false, null);
 			}
@@ -165,7 +162,7 @@ public class MXHotspotView extends RelativeLayout
 						@Override
 						public void onAnimationStart(Animation animation)
 						{
-							MXHotspot.state = HotspotPieState.Animating;
+							MXHotspot.state = MXHotspot.HotspotPieState.Animating;
 						}
 
 						@Override
@@ -203,7 +200,7 @@ public class MXHotspotView extends RelativeLayout
 			}
 
 			smallPieView.renderPieButton();
-			MXHotspot.state = HotspotPieState.OpenSmallPie;
+			MXHotspot.state = MXHotspot.HotspotPieState.OpenSmallPie;
 
 			if (callback != null)
 			{
@@ -234,7 +231,7 @@ public class MXHotspotView extends RelativeLayout
 						@Override
 						public void onAnimationStart(Animation animation)
 						{
-							MXHotspot.state = HotspotPieState.Animating;
+							MXHotspot.state = MXHotspot.HotspotPieState.Animating;
 						}
 
 						@Override
@@ -257,7 +254,7 @@ public class MXHotspotView extends RelativeLayout
 		else
 		{
 			removeView(smallPieView);
-			MXHotspot.state = HotspotPieState.Close;
+			MXHotspot.state = MXHotspot.HotspotPieState.Close;
 
 			if (callback != null)
 			{
@@ -298,7 +295,7 @@ public class MXHotspotView extends RelativeLayout
 						@Override
 						public void onAnimationStart(Animation animation)
 						{
-							MXHotspot.state = HotspotPieState.Animating;
+							MXHotspot.state = MXHotspot.HotspotPieState.Animating;
 						}
 
 						@Override
@@ -336,7 +333,7 @@ public class MXHotspotView extends RelativeLayout
 			}
 
 			largePieView.renderPieButton();
-			MXHotspot.state = HotspotPieState.OpenLargePie;
+			MXHotspot.state = MXHotspot.HotspotPieState.OpenLargePie;
 
 			if (callback != null)
 			{
@@ -367,7 +364,7 @@ public class MXHotspotView extends RelativeLayout
 						@Override
 						public void onAnimationStart(Animation animation)
 						{
-							MXHotspot.state = HotspotPieState.Animating;
+							MXHotspot.state = MXHotspot.HotspotPieState.Animating;
 						}
 
 						@Override
@@ -390,7 +387,7 @@ public class MXHotspotView extends RelativeLayout
 		else
 		{
 			removeView(largePieView);
-			MXHotspot.state = HotspotPieState.OpenSmallPie;
+			MXHotspot.state = MXHotspot.HotspotPieState.OpenSmallPie;
 
 			if (callback != null)
 			{
@@ -410,7 +407,7 @@ public class MXHotspotView extends RelativeLayout
 	@Override
 	public boolean onTouchEvent(MotionEvent event)
 	{
-		if (MXHotspot.state == HotspotPieState.Animating)
+		if (MXHotspot.state == MXHotspot.HotspotPieState.Animating)
 		{
 			// skip event
 			return true;
@@ -476,7 +473,7 @@ public class MXHotspotView extends RelativeLayout
 				long time = System.currentTimeMillis();
 
 				if ((time - _firstTouchTime) < DETECT_CLICK_EVENT_TIME && deltaX < DETECT_CLICK_EVENT_DISTANCE
-						&& deltaY < DETECT_CLICK_EVENT_DISTANCE && MXHotspot.direction != HotspotDirection.Invalid)
+						&& deltaY < DETECT_CLICK_EVENT_DISTANCE && MXHotspot.direction != MXHotspot.HotspotDirection.Invalid)
 				{
 					if (_delegate != null)
 						_delegate.openHotpot(true);

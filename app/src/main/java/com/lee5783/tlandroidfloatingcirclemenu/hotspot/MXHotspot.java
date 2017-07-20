@@ -1,4 +1,4 @@
-package com.thule.floatingcirclemenu.hotspot;
+package com.lee5783.tlandroidfloatingcirclemenu.hotspot;
 
 import java.util.ArrayList;
 
@@ -19,14 +19,11 @@ import android.view.ViewGroup.LayoutParams;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
-import com.thule.floatingcirclemenu.hotspot.MXHotspotButton.ButtonType;
-import com.thule.floatingcirclemenu.hotspot.MXHotspotView.MXHotspotViewDelegate;
-
 /**
  * @author thule
  * 
  */
-public class MXHotspot implements MXHotspotViewDelegate
+public class MXHotspot implements MXHotspotView.MXHotspotViewDelegate
 {
 	public static int SPOT_SIZE = 0;
 	public static int SMALL_PIE_SIZE = 0;
@@ -337,11 +334,11 @@ public class MXHotspot implements MXHotspotViewDelegate
 	{
 		ArrayList<MXHotspotButton> result = new ArrayList<MXHotspotButton>();
 
-		MXHotspotButton addnewBtn = new MXHotspotButton(ButtonType.AddNew);
+		MXHotspotButton addnewBtn = new MXHotspotButton(MXHotspotButton.ButtonType.AddNew);
 		result.add(addnewBtn);
-		MXHotspotButton stopBtn = new MXHotspotButton(ButtonType.Stop);
+		MXHotspotButton stopBtn = new MXHotspotButton(MXHotspotButton.ButtonType.Stop);
 		result.add(stopBtn);
-		MXHotspotButton moreBtn = new MXHotspotButton(ButtonType.More);
+		MXHotspotButton moreBtn = new MXHotspotButton(MXHotspotButton.ButtonType.More);
 		result.add(moreBtn);
 
 		return result;
@@ -352,13 +349,13 @@ public class MXHotspot implements MXHotspotViewDelegate
 	{
 		ArrayList<MXHotspotButton> result = new ArrayList<MXHotspotButton>();
 
-		MXHotspotButton manageSessionBtn = new MXHotspotButton(ButtonType.ManageSession);
+		MXHotspotButton manageSessionBtn = new MXHotspotButton(MXHotspotButton.ButtonType.ManageSession);
 		result.add(manageSessionBtn);
-		MXHotspotButton captureBtn = new MXHotspotButton(ButtonType.Capture);
+		MXHotspotButton captureBtn = new MXHotspotButton(MXHotspotButton.ButtonType.Capture);
 		result.add(captureBtn);
-		MXHotspotButton editBtn = new MXHotspotButton(ButtonType.Edit);
+		MXHotspotButton editBtn = new MXHotspotButton(MXHotspotButton.ButtonType.Edit);
 		result.add(editBtn);
-		MXHotspotButton settingBtn = new MXHotspotButton(ButtonType.Setting);
+		MXHotspotButton settingBtn = new MXHotspotButton(MXHotspotButton.ButtonType.Setting);
 		result.add(settingBtn);
 
 		return result;
@@ -368,7 +365,7 @@ public class MXHotspot implements MXHotspotViewDelegate
 	{
 		Log.i("Pieview", "Click " + sender.type.name());
 
-		if (sender.type == ButtonType.More)
+		if (sender.type == MXHotspotButton.ButtonType.More)
 		{
 			if (state == HotspotPieState.OpenLargePie)
 			{

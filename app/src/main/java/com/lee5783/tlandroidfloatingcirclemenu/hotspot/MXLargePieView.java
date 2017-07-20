@@ -1,8 +1,9 @@
-package com.thule.floatingcirclemenu.hotspot;
+package com.lee5783.tlandroidfloatingcirclemenu.hotspot;
 
 import android.content.Context;
 
-import com.thule.floatingcirclemenu.R;
+import com.lee5783.tlandroidfloatingcirclemenu.R;
+import com.lee5783.tlandroidfloatingcirclemenu.hotspot.MXPieView;
 
 /**
  * @author thule

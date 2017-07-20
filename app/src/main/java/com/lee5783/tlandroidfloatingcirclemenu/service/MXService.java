@@ -1,11 +1,11 @@
-package com.thule.floatingcirclemenu.service;
+package com.lee5783.tlandroidfloatingcirclemenu.service;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.view.WindowManager;
 
-import com.thule.floatingcirclemenu.hotspot.MXHotspot;
+import com.lee5783.tlandroidfloatingcirclemenu.hotspot.MXHotspot;
 
 /**
  * @author thule
