@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/thule/.android/build-cache/00dad26ef1d3cdb12303cb2f1fc0f7919c610214/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/classes_422d68bdd40f15e72ccb5d0ffcf0711b50b9366e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/.android/build-cache/82b07f99b0c192d5b4fd69f6029686f165db63a0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/classes_81b3602b1c4f0d80913098ac565e54e3522981d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_d9d6ec7e65b60e49adf919a2d42b10de147eed7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/.android/build-cache/c07c1b5adc28033e20a24c8562d9a10b470cf0a9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/classes_22c5e0a75b4e35aa734c557766f8ec0c133fb6e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/.android/build-cache/0007e2ddb55080d8ee2fe709f560287b83b9e187/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/classes_cf99763d3e53254e8dd8f5c1ab6447bcaa5363b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/.android/build-cache/3df54ba285d8a66883047327399e51b2ece6f817/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/classes_142f110c05961dfbb9d4ead87195b8a37f8c8bc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/.android/build-cache/58c128c18732e7f8fab1c75a458c5b2ed52aa47a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/classes_46ab37364fbc4b121541561af974fcba722ff6a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_75a1ab9f439c837eb93761aeec1a5937f99a0715.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/.android/build-cache/d44c5696ed22be7bb3fe6278c8dda3b42650e47c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/classes_4f4a5fc81c44124832b0095d3a9a1def3aa287fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/.android/build-cache/07ddf28c3c6f1c98bc7dd3b7d162b7ff9c8e83d7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/classes_ccb9467744ed302352c0a74fffc7cc7b9b4dec2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/.android/build-cache/8a9ff10877a4316de9b385797ada817ac1906fb9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/classes_20f1fb219ec59354033b5c5c40666f146f429fb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/thule/.android/build-cache/1893252a5d744c55bc98f735d035b579cd3769d5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/thule/Documents/workspace/open-sources/TLAndroidFloatingMenu-2/app/build/intermediates/pre-dexed/debug/classes_344d5e352035177030842ab35080cd127d4cf8b7.jar" />
+    </item>
+
+</items>
